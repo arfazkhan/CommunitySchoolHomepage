@@ -29,7 +29,7 @@ The task is to work with the existing HTML structure and apply CSS styles to ach
 ## Project Setup
 
 1. **Clone the Repository:**
-    ```
+    ```shell
     git clone https://github.com/arfazkhan/CommunitySchoolHomepage.git
     cd community-college-website
 
