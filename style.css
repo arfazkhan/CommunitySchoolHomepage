@@ -1,0 +1,88 @@
+/* General setup */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    font-size: 15px; /* Set a site-wide font-size of 10px */
+    line-height: 1.5; /* Adjust line-height for body text */
+    font-family: Arial, sans-serif; /* Use a common web-safe sans-serif font for the body text */
+  }
+  
+  /* Layout */
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+    /* Increase the height of the navigation menu */
+    height: 100%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+    text-align: center; /* Center the text in the header */
+  }
+  
+  /* Fonts */
+  h1, h2 {
+    font-family: Arial, sans-serif; /* Use the default font for headings */
+    letter-spacing: 2px; /* Add letter-spacing to headings */
+  }
+  
+  p {
+    letter-spacing: 1px; /* Add letter-spacing to body text */
+    word-spacing: 2px; /* Add word-spacing to body text */
+    text-indent: 20px; /* Add text-indentation to the first paragraph after headings in sections */
+  }
+  
+  /* Links */
+  a, a:visited, a:focus {
+    text-decoration: none; /* Remove default underlines */
+    color: #a66; /* Set link color */
+  }
+  
+  a:hover, a:focus {
+    text-decoration: underline; /* Add underline on hover/focus */
+  }
+  
+  a:active {
+    color: #ff0000; /* Set a different style for the active state */
+  }
+  
+  /* External Links */
+  a.external:after {
+    content: " \2197"; /* Add an external link icon using Unicode character */
+  }
+  
+  /* Lists */
+  ul, ol {
+    padding-left: 20px; /* Adjust spacing for lists */
+    line-height: 1.5; /* Match list item line-height with paragraphs */
+  }
+  
+  li {
+    list-style-type: disc; /* Use disc as the bullet style for list items */
+  }
+  
