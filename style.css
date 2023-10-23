@@ -4,34 +4,16 @@
   }
   
   body {
-    margin: 0 auto;
-    min-width: 1000px;
-    max-width: 1400px;
-    font-size: 15px; /* Set a site-wide font-size of 10px */
-    line-height: 1.5; /* Adjust line-height for body text */
-    font-family: Arial, sans-serif; /* Use a common web-safe sans-serif font for the body text */
+    margin: 0;
+    padding: 0;
+    font-size: 15px; 
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
   }
   
   /* Layout */
-  section {
-    float: left;
-    width: 50%;
-  }
-  
-  aside {
-    float: left;
-    width: 30%;
-  }
-  
-  nav {
-    float: left;
-    width: 20%;
-    /* Increase the height of the navigation menu */
-    height: 100%;
-  }
-  
-  footer {
-    clear: both;
+  section, aside, nav {
+    width: 100%; 
   }
   
   header, section, aside, nav, footer {
@@ -42,47 +24,71 @@
   header, footer {
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
-    text-align: center; /* Center the text in the header */
+    text-align: center;
   }
   
   /* Fonts */
   h1, h2 {
-    font-family: Arial, sans-serif; /* Use the default font for headings */
-    letter-spacing: 2px; /* Add letter-spacing to headings */
+    letter-spacing: 2px;
   }
   
   p {
-    letter-spacing: 1px; /* Add letter-spacing to body text */
-    word-spacing: 2px; /* Add word-spacing to body text */
-    text-indent: 20px; /* Add text-indentation to the first paragraph after headings in sections */
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-indent: 20px;
   }
   
   /* Links */
   a, a:visited, a:focus {
-    text-decoration: none; /* Remove default underlines */
-    color: #a66; /* Set link color */
+    text-decoration: none;
+    color: #a66;
   }
   
   a:hover, a:focus {
-    text-decoration: underline; /* Add underline on hover/focus */
+    text-decoration: underline;
   }
   
   a:active {
-    color: #ff0000; /* Set a different style for the active state */
+    color: #ff0000;
   }
   
   /* External Links */
   a.external:after {
-    content: " \2197"; /* Add an external link icon using Unicode character */
+    content: " \2197";
   }
   
   /* Lists */
   ul, ol {
-    padding-left: 20px; /* Adjust spacing for lists */
-    line-height: 1.5; /* Match list item line-height with paragraphs */
+    padding-left: 20px;
+    line-height: 1.5;
   }
   
   li {
-    list-style-type: disc; /* Use disc as the bullet style for list items */
+    list-style-type: disc;
   }
+  
+  /* Responsive layout adjustments */
+  @media screen and (min-width: 600px) {
+    /* For screens wider than 600px, adjust the layout of the columns */
+    section {
+      float: left;
+      width: 50%;
+    }
+  
+    aside {
+      float: left;
+      width: 30%;
+    }
+  
+    nav {
+      float: left;
+      width: 20%;
+      height: 100%;
+    }
+  
+    footer {
+      clear: both;
+    }
+  }
+
   
